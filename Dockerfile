@@ -10,4 +10,7 @@ ADD index.html /var/www/html/index.nginx-debian.html
 
 ADD app.js /app/
 
+# Expose Port
+EXPOSE 80 3000
+
 ENTRYPOINT ["/bin/bash","/start.sh","-c"]
